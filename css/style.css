@@ -1,0 +1,29 @@
+﻿body{
+    margin: 0;
+    display: block;
+}
+
+.top {
+    overflow: hidden;
+    max-height: 375px;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.top > video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-size: cover;
+    z-index: -1;
+}
+
+.main{
+    background-color: white;
+}
+
+.bottom{
+    background-color: grey;
+}
