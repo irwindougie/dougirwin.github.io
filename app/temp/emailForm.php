@@ -1,17 +1,4 @@
-﻿  <form method="post" action="emailForm.php">
-      <label>Name:</label>
-      <input required name="sender" />
-
-      <label>Email address:</label>
-      <input name="senderEmail" />
-
-      <label>Message:</label>
-      <textarea rows="5" cols="20" name="message"></textarea>
-
-      <input type="submit" name="submit" />
-  </form>
-
-  <?php
+﻿<?php
 
 if($_POST["submit"]) {
     $recipient="contact@dougirw.in";
@@ -29,3 +16,20 @@ if($_POST["submit"]) {
     }
 
     ?>
+<div>
+  <?=$thankYou ?>
+
+  <form method="post" action="emailForm.php">
+      <label>Name:</label>
+      <input name="sender" />
+
+      <label>Email address:</label>
+      <input name="senderEmail" />
+
+      <label>Message:</label>
+      <textarea rows="5" cols="20" name="message"></textarea>
+
+      <input type="submit" name="submit" />
+  </form>
+
+</div>
